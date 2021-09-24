@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".profilPengaturan"
+    android:orientation="vertical">
+    //Header Layout
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="14dp"
+        android:background="#EDEEF7">
+        <TextView
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            android:text="Kembali"
+            android:drawableLeft="@drawable/ic_baseline_chevron_left_24"
+            android:drawableTint="@color/black"
+            android:id="@+id/tvKembali"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="24dp"
+            android:textColor="@color/black"
+            android:text="PENGATURAN"/>
+    </LinearLayout> //Header Layout
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="KEAMANAN LOGIN"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="14dp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="14dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="     Kata Sandi"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="14dp"
+        android:textColor="@color/black"
+        android:drawableLeft="@drawable/ic_baseline_vpn_key_24"
+        android:padding="14dp"
+        android:layout_marginTop="14dp"
+        android:background="#FBFBFB"
+        android:id="@+id/tvPw"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="     Email"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="14dp"
+        android:textColor="@color/black"
+        android:drawableLeft="@drawable/ic_baseline_email_24"
+        android:padding="14dp"
+        android:layout_marginTop="5dp"
+        android:background="#FBFBFB"
+        android:id="@+id/tvEm"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="INFORMASI PERSONAL"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="14dp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="14dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="14dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama Lengkap"
+            android:fontFamily="@font/poppins"
+            android:textSize="12dp"
+            android:textColor="@color/black" />
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:textAlignment="viewEnd"
+            android:gravity="center|end"
+            android:layout_height="wrap_content"
+            android:text="John Doe Purnomo"
+            android:fontFamily="@font/poppins"
+            android:drawableRight="@drawable/ic_baseline_chevron_right_24"
+            android:drawableTint="@color/black"
+            android:textSize="12dp"
+            android:textColor="@color/black"
+            android:id="@+id/tvNamaProf"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="14dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jenis Kelamin"
+            android:fontFamily="@font/poppins"
+            android:textSize="12dp"
+            android:textColor="@color/black" />
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:textAlignment="viewEnd"
+            android:gravity="center|end"
+            android:layout_height="wrap_content"
+            android:text="Laki-Laki"
+            android:fontFamily="@font/poppins"
+            android:drawableRight="@drawable/ic_baseline_chevron_right_24"
+            android:drawableTint="@color/black"
+            android:textSize="12dp"
+            android:textColor="@color/black"
+            android:id="@+id/tvJk"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="14dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alamat Lengkap"
+            android:fontFamily="@font/poppins"
+            android:textSize="12dp"
+            android:textColor="@color/black" />
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:textAlignment="viewEnd"
+            android:gravity="center|end"
+            android:layout_height="wrap_content"
+            android:text="Jl. Pagesangan Timur VII Surabaya"
+            android:fontFamily="@font/poppins"
+            android:drawableRight="@drawable/ic_baseline_chevron_right_24"
+            android:drawableTint="@color/black"
+            android:textSize="12dp"
+            android:textColor="@color/black"
+            android:id="@+id/tvAddress"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="14dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nomer Telp."
+            android:fontFamily="@font/poppins"
+            android:textSize="12dp"
+            android:textColor="@color/black" />
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:textAlignment="viewEnd"
+            android:gravity="center|end"
+            android:layout_height="wrap_content"
+            android:text="0822-2222-2222"
+            android:fontFamily="@font/poppins"
+            android:drawableRight="@drawable/ic_baseline_chevron_right_24"
+            android:drawableTint="@color/black"
+            android:textSize="12dp"
+            android:textColor="@color/black"
+            android:id="@+id/tvNum"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="14dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tanggal Lahir"
+            android:fontFamily="@font/poppins"
+            android:textSize="12dp"
+            android:textColor="@color/black" />
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:textAlignment="viewEnd"
+            android:gravity="center|end"
+            android:layout_height="wrap_content"
+            android:text="12 Januari 1997"
+            android:fontFamily="@font/poppins"
+            android:drawableRight="@drawable/ic_baseline_chevron_right_24"
+            android:drawableTint="@color/black"
+            android:textSize="12dp"
+            android:textColor="@color/black"
+            android:id="@+id/tvTtl"/>
+    </LinearLayout>
+
+</LinearLayout>

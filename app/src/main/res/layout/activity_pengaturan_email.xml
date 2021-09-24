@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".pengaturanEmail"
+    android:orientation="vertical">
+    //Header Layout
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="14dp"
+        android:background="#EDEEF7">
+        <TextView
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            android:text="UBAH EMAIL"
+            android:drawableLeft="@drawable/ic_baseline_chevron_left_24"
+            android:drawableTint="@color/black"
+            android:id="@+id/tvKembaliUEmail"/>
+    </LinearLayout> //Header Layout
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ubah Email"
+        android:fontFamily="@font/poppins"
+        android:textSize="12dp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="14dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:id="@+id/et_emailEdit"
+        android:layout_marginHorizontal="14dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/btnsimpan"
+            android:background="@android:color/transparent"
+            android:layout_marginHorizontal="14dp"
+            android:layout_marginBottom="28dp"/>
+    </RelativeLayout>
+
+</LinearLayout>

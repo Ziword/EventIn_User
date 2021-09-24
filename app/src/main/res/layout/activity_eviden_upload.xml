@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".evidenUpload"
+    android:orientation="vertical">
+
+    //Header Layout
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="14dp">
+        <TextView
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="18dp"
+            android:textColor="#7868E6"
+            android:text="Kembali"
+            android:drawableLeft="@drawable/ic_baseline_chevron_left_24"
+            android:drawableTint="#7868E6"
+            android:id="@+id/tvKembaliUploadE"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="24dp"
+            android:textColor="#7868E6"
+            android:text="PORTOFOLIO"/>
+    </LinearLayout> //Header Layout
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/head_title_pengajuan"
+        android:backgroundTint="#E4FBFF">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="14dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:textAlignment="center"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:textSize="18dp"
+                android:textColor="#7868E6"
+                android:text="Nama Event"
+                android:id="@+id/tvnEviUpload"/>
+            <TextView
+
+                android:layout_width="match_parent"
+                android:textAlignment="center"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:textSize="18dp"
+                android:textColor="#7868E6"
+                android:text="Penyelenggara"
+                android:id="@+id/tvpUpload"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textSize="12dp"
+                    android:textColor="@color/black"
+                    android:text="NO EVIDEN"/>
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:textSize="18dp"
+                    android:textColor="@color/black"
+                    android:text="|"/>
+
+                <TextView
+                    android:id="@+id/tglEventU"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_light"
+                    android:textSize="12dp"
+                    android:textColor="#7868E6"
+                    android:text="21/01/2021 - 21/01/2021"/>
+            </LinearLayout>
+            <View
+                android:layout_marginTop="14dp"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_weight="0"
+                android:background="@color/black" />
+
+            <ImageButton
+                android:layout_gravity="center"
+                android:layout_width="400dp"
+                android:layout_height="400dp"
+                android:src="@drawable/btnpiliheviden"
+                android:background="@android:color/transparent"
+                android:layout_marginTop="24dp"
+                android:id="@+id/btnPilihEvi"/>
+
+            <ImageView
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:src="@drawable/imgdefeviden"
+                android:id="@+id/viewImage"
+                android:background="@drawable/rounbox_white"/>
+
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/btnuploadsimpan"
+                android:background="@android:color/transparent"
+                android:layout_marginTop="14dp"
+                android:id="@+id/btnUpSave"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

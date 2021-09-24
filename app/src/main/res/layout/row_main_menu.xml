@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="24dp"
+    app:cardBackgroundColor="#EDEEF7">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="14dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:background="@drawable/rctfotoprofil">
+
+                <ImageView
+                    android:id="@+id/logoPerusahaan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/logo" />
+            </LinearLayout>
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="14dp"
+                android:background="@drawable/rctpresentasi"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                android:textAlignment="gravity">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="12dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="PERSENTASE PENOLAKAN"
+                    android:textColor="@color/primary_apps"
+                    android:textAlignment="center"/>
+                <TextView
+                    android:id="@+id/tvPersentase"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="36dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textColor="@color/primary_apps"
+                    android:text="44.75%"
+                    android:textAlignment="center"/> //Rumus Persentase -> Jumlah Status Ditolak pada perusahaan yang tampil dibagi total ajuan pada perusahaan dikali 100%
+            </LinearLayout>
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:textSize="18dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:textColor="@color/dark_40"
+            android:text="PT. Eventin Tbk,"
+            android:id="@+id/txtNPerusahaan"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:textColor="@color/dark_40"
+            android:text="Pengajuan Cepat dan Tepat"
+            android:id="@+id/textBidangPerusahaan"/>
+        <View
+            android:layout_width="50dp"
+            android:layout_height="4dp"
+            android:layout_weight="0"
+            android:background="@color/black"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="14dp"/>
+        <TextView
+            android:id="@+id/txtProfil"
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/quicksandbook"
+            android:textSize="12dp"
+            android:textColor="@color/black"
+            android:text="PT Telkom Indonesia (Persero) Tbk (Telkom) adalah Badan Usaha Milik Negara (BUMN) yang bergerak di bidang jasa layanan teknologi informasi \n...Selengkapnya"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_weight="0"
+            android:background="@color/black"
+            android:layout_marginTop="14dp"
+            android:layout_marginRight="14dp"/>
+        <TextView
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:textSize="12dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:textColor="@color/black"
+            android:text="50 Event Diterima"
+            android:id="@+id/txtJumEvent"/>
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

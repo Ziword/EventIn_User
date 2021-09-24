@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/headCompany">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/headcompany"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:padding="24dp">
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="18dp"
+        android:text="Kembali"
+        android:textColor="@color/white"
+        android:drawableStart="@drawable/ic_baseline_chevron_left_24"
+        android:id="@+id/txtBack"
+        android:layout_marginTop="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_alignParentTop="true"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="14dp"
+        android:padding="24dp"
+        android:layout_below="@+id/txtBack"
+        android:orientation="horizontal"
+        android:background="@drawable/rctprofildetail">
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:background="@drawable/rctfotoprofil">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo"
+                android:layout_gravity="center"
+                android:id="@+id/logoDPerusahaan"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="14dp"
+            android:layout_gravity="center_vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:textSize="18dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:textColor="@color/dark_40"
+                android:text="PT. Eventin Tbk,"
+                android:id="@+id/txtNDPerusahaan"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:textColor="@color/dark_40"
+                android:text="Pengajuan Cepat dan Tepat"
+                android:id="@+id/txtDBidangPerusahaan"/>
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:textSize="12dp"-->
+<!--                android:fontFamily="@font/poppins_medium"-->
+<!--                android:textColor="@color/dark_40"-->
+<!--                android:text="Pensponsorshipan"-->
+<!--                android:id="@+id/txtJDPerusahaan"/>-->
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

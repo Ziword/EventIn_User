@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".resetPw"
+    android:background="#E4FBFF">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="24dp"
+        android:id="@+id/imgLogo"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/imgLogo"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/head_title_pengajuan">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semibold"
+            android:textColor="#7868E6"
+            android:textSize="36dp"
+            android:text="Reset Password"
+            android:layout_marginTop="24dp"
+            android:layout_marginRight="24dp"
+            android:textAlignment="viewEnd"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semibold"
+            android:textColor="@color/dark_40"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="32dp"
+            android:textSize="14dp"
+            android:text="Password Baru"/>
+        <EditText
+            android:id="@+id/etPwNew"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="14dp"
+            android:layout_marginTop="5dp"
+            android:textSize="14dp"
+            android:textColor="@color/dark_40"
+            android:fontFamily="@font/poppins_medium"
+            android:background="@drawable/rounbox_white"
+            android:padding="14dp"
+            android:inputType="textPassword"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semibold"
+            android:textColor="@color/dark_40"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="14dp"
+            android:textSize="14dp"
+            android:text="Ulangi Password Baru"/>
+        <EditText
+            android:id="@+id/etPWNewK"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="john@doe.com"
+            android:layout_marginHorizontal="14dp"
+            android:layout_marginTop="5dp"
+            android:textSize="14dp"
+            android:textColor="@color/dark_40"
+            android:fontFamily="@font/poppins_medium"
+            android:background="@drawable/rounbox_white"
+            android:padding="14dp"
+            android:inputType="textPassword"/>
+
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/btnsimpan"
+            android:layout_marginHorizontal="14dp"
+            android:layout_marginTop="24dp"
+            android:background="@android:color/transparent"
+            android:id="@+id/btnSavePw" />
+    </LinearLayout>
+    <TextView
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_semibold"
+        android:textColor="@color/dark_40"
+        android:layout_marginBottom="28dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true"
+        android:textSize="14dp"
+        android:text="Kembali"
+        android:id="@+id/et_kembaliReset"/>
+
+</RelativeLayout>

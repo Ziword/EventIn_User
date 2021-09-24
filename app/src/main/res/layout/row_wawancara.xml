@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="14dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tvIdWawancara"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            android:text="ID. 0121028713"/>
+        <TextView
+            android:id="@+id/tvEventWawancara"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="18dp"
+            android:textColor="#7868E6"
+            android:text="Nama Event"/>
+        <TextView
+            android:id="@+id/tvWawancaraPenyelenggara"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:textSize="18dp"
+            android:textColor="#7868E6"
+            android:text="Penyelenggara"/>
+        <TextView
+            android:id="@+id/row_tglAcara"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:textSize="12dp"
+            android:textColor="@color/dark_50"
+            android:text="19/02/2021-28/01/2021"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="22dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="14dp"
+            android:text="Lokasi Wawancara :"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_lokasi"
+            android:fontFamily="@font/poppins"
+            android:textSize="14dp"
+            android:text="Cafe Imam Bonjol Surabaya"/>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="14dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="14dp"
+            android:text="Waktu Wawancara :"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_waktu"
+            android:fontFamily="@font/poppins"
+            android:textSize="14dp"
+            android:text="18/02/2021"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="right">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/statusapprove"
+                android:id="@+id/sts_approve"
+                android:visibility="visible"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
